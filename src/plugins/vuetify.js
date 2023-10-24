@@ -6,7 +6,6 @@ import { layoutComponents } from '../components/layout/index'
 import { commonComponents } from '../components/common/index'
 import { wrapperComponents } from '../components/wrappers/index'
 import { modulesComponents } from '../components/modules/index'
-import { svgComponents } from '../components/svg';
 
 Vue.use(Vuetify);
 
@@ -15,7 +14,6 @@ Vue.use(layoutComponents);
 Vue.use(commonComponents);
 Vue.use(wrapperComponents);
 Vue.use(modulesComponents);
-Vue.use(svgComponents);
 
 export default new Vuetify({
     lang: {
