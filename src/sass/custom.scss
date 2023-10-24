@@ -1,0 +1,46 @@
+  $vt-color-progress-default: red !default;
+
+  .Vue-Toastification__toast--error.my-toast-class {
+    background-color: var(--v-error-base) !important;
+    border-radius: 150px !important;
+    color: white;
+    font-size: 33px;
+    font-weight: normal;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  .Vue-Toastification__toast--info.my-toast-class {
+    background-color: var(--v-info-base) !important;
+    border-radius: 150px !important;
+    color: white;
+    font-size: 33px;
+    font-weight: normal;
+    padding-left: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .Vue-Toastification__toast--success.my-toast-class {
+    background-color: var(--v-success-base) !important;
+    border-radius: 150px !important;
+    color: white;
+    font-size: 33px;
+    font-weight: normal;
+    padding-left: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .Vue-Toastification__toast--warning.my-toast-class {
+    background-color: var(--v-warning-base) !important;
+    border-radius: 150px !important;
+    color: white;
+    font-size: 33px;
+    font-weight: normal;
+    padding-left: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .Vue-Toastification__close-button.my-toast-button-class {
+    color: black !important;
+  }

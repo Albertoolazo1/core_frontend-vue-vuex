@@ -1,0 +1,149 @@
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  .v-menu__content::-webkit-scrollbar,
+  .v-card::-webkit-scrollbar {
+    background-color: white !important;
+    border-radius: 25px;
+    width: 10px !important;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .v-menu__content::-webkit-scrollbar-thumb,
+  .v-card::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    border: 1px solid grey;
+  }
+  
+  .theme--dark.v-application {
+    background-color: var(
+      --v-background-base,
+      var(--v-primary-base) #121212
+    ) !important;
+  }
+  .theme--light.v-application {
+    background-color: var(--v-background-base, white) !important;
+  }
+  
+  .theme--light.v-data-table tbody tr:nth-of-type(even) {
+    background-color: #acbdc35d;
+  }
+  .theme--dark.v-data-table tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .v-data-table-header th {
+    white-space: nowrap;
+    background-color: var(--v-primary-base);
+    color: white !important;
+  }
+  .image-mobile {
+    display: block;
+  }
+  .grafica-slide-mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1180px) {
+    .imageLogin {
+      background-image: none !important;
+    }
+    .image-mobile {
+      display: none;
+    }
+    .grafica-slide-mobile {
+      display: block;
+    }
+  }
+  
+  .router-anim-enter-active {
+    animation: coming 0.3s;
+    animation-delay: 0.4s;
+    opacity: 0;
+  }
+  .router-anim-leave-active {
+    animation: going 0.3s;
+  }
+  
+  @keyframes going {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50px);
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  @keyframes coming {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+      display: none;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .v-data-table__wrapper::-webkit-scrollbar {
+    width: 9px;
+    height: 10px;
+  }
+  
+  .v-data-table__wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .v-data-table__wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(180, 180, 180);
+    border-radius: 20px;
+    border: 1px solid rgb(180, 180, 180);
+  }
+  .remove-shadow {
+    box-shadow: none !important;
+  }
+
+  .text-bold {
+    font-weight: 900 !important;
+  }
+
+  .icon-anim-enter-active {
+    transition: all .3s ease;
+  }
+  .icon-anim-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    position: absolute;
+  }
+  .icon-anim-enter, .icon-anim-leave-to {
+    transform: translateX(-5px);
+    opacity: 0;
+  }
+  @keyframes going {
+    from {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes coming {
+    from {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }

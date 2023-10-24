@@ -1,0 +1,53 @@
+@import '~vuetify/src/styles/styles.sass';
+@import '~vuetify/src/styles/settings/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$body-font-family: 'Montserrat';
+$headings-font-family: 'Montserrat';
+
+$typoOptions: "display-4", "display-3", "display-2", "display-1", "headline",
+  "title", "subtitle-1", "subtitle-2", "body-1", "body-2", "caption", "overline";
+
+$headings-breakpoint: "sm", "md", "lg", "xl";
+$headings-value: "h1", "h2", "h3", "h4", "h5", "h6", "subtitle-1", "subtitle-2",
+  "body-1", "body-2", "button", "caption", "overline";
+#app {
+  font-family: $body-font-family, sans-serif !important;
+  @each $typoOption in $typoOptions {
+    .#{$typoOption} {
+      font-family: $headings-font-family, sans-serif !important;
+    }
+  }
+  @each $heading in $headings-value {
+    @each $breakpoint in $headings-breakpoint {
+      .text-#{$breakpoint}-#{$heading} {
+        font-family: $headings-font-family, sans-serif !important;
+      }
+    }
+  }
+}
+
+$material-light: map-merge($material-light, ('background': var(--v-background-base, map-get($material-light, 'background')) !important,
+    ));
+$material-dark: map-merge($material-dark, ('background': var(--v-background-base, map-get($material-dark, 'background')) !important,
+    ));
+
+$vt-color-progress-default: red !important;
+$navigation-drawer-border-width :0;
+
+.v-application {
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .headline,
+    .title,
+    .subtitle-1,
+    .subtitle-2,
+    .body-1,
+    .body-2,
+    .caption,
+    .overline {
+      font-family: $body-font-family !important;
+    }
+  }
