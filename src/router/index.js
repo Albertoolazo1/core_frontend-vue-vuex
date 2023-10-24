@@ -7,7 +7,7 @@ import { store } from '../_store';
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '*', redirect: '/' },
+  { path: '*', redirect: '/home' },
   {
     path: '/login/:param1/:param2/:param3',
     name: 'loginParams',
