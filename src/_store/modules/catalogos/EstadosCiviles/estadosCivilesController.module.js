@@ -108,9 +108,7 @@ const mutations = {
 }
 
 const getters = {
-    getNumeroMagico() {
-        return state.numeroMagico
-    }
+
 }
 
 export const estadosCivilesController = {
