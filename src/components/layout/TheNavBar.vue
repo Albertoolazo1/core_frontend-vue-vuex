@@ -1,7 +1,7 @@
 <template>
   <v-app-bar v-show="isLogged" color="custom_background" app elevate-on-scroll>
     <v-app-bar-nav-icon v-if="perfilUsuario.clave === '02'">
-      <v-img height="50" contain src="@/assets/logo.png" alt="logo"></v-img>
+      <v-img height="50" contain :src="imgLogo" alt="logo"></v-img>
     </v-app-bar-nav-icon>
 
     <the-clock v-show="false" />
@@ -55,6 +55,7 @@
 <script>
 import { mapGetters, mapActions, mapState } from "vuex";
 import { appStorage, searchMenuItem } from "../../_helpers";
+import ImgLogo from "@/assets/logo.png";
 
 export default {
   created() {
@@ -84,6 +85,7 @@ export default {
 
   data() {
     return {
+      imgLogo: ImgLogo,
       nombre: "",
       username: "",
       nameabrv: "",

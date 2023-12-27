@@ -2,7 +2,7 @@
   <v-row align="center" justify="center">
     <v-col cols="12" md="6" class="text-center">
       <w-card elevation="0" class="pt-10">
-        <v-img class="mb-16" height="15vh" contain src="@/assets/logo.png" />
+        <v-img class="mb-16" height="15vh" contain :src="imgLogo" />
         <v-card-subtitle>
           <h2>Selecciona una opción para continuar</h2>
           <br />
@@ -32,10 +32,12 @@
 
 <script>
 import { mapActions } from "vuex";
+import ImgLogo from "@/assets/logo.png";
 
 export default {
   data() {
     return {
+      imgLogo: ImgLogo,
       STEP_LOGIN: 2,
       STEP_SIGNUP: 3,
       DESTINO_LOGIN: 2,

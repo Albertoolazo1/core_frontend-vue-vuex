@@ -2,12 +2,19 @@ import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
 import { config } from '../_config'
 import es from 'vuetify/lib/locale/es'
-import { layoutComponents } from '../components/layout/index'
-import { commonComponents } from '../components/common/index'
-import { wrapperComponents } from '../components/wrappers/index'
-import { modulesComponents } from '../components/modules/index'
+import { layoutComponents } from '../components/layout/index';
+import { commonComponents } from '../components/common/index';
+import { wrapperComponents } from '../components/wrappers/index';
+import { modulesComponents } from '../components/modules/index';
+import Ripple from 'vuetify/lib/directives/ripple';
 
-Vue.use(Vuetify);
+import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
+
+Vue.use(Vuetify, {
+    directives: {
+        Ripple,
+    },
+});
 
 // plugins componentes
 Vue.use(layoutComponents);

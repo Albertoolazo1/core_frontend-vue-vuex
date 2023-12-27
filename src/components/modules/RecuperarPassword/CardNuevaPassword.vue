@@ -2,8 +2,7 @@
   <v-row align="center" justify="center">
     <v-col cols="12" md="4" offset-md="1">
       <w-card elevation="0">
-        <v-img class="mb-7" src="@/assets/logo.png" height="10vh" contain>
-        </v-img>
+        <v-img class="mb-7" :src="imgLogo" height="10vh" contain> </v-img>
 
         <v-card-title>
           <h2 class="mb-7 font-weight-bold">Nueva contraseña</h2>
@@ -59,7 +58,7 @@
     </v-col>
     <v-col class="image-mobile" cols="12" md="6" offset-md="1">
       <w-card elevation="0">
-        <v-img contain height="70vh" src="@/assets/no-image.png"></v-img>
+        <v-img contain height="70vh" :src="imgNoImage"></v-img>
       </w-card>
     </v-col>
   </v-row>
@@ -67,10 +66,14 @@
     
     <script>
 import { mapActions, mapState } from "vuex";
+import ImgLogo from "@/assets/logo.png";
+import ImgNoImage from "@/assets/no-image.png";
 
 export default {
   data() {
     return {
+      imgLogo: ImgLogo,
+      imgNoImage: ImgNoImage,
       showPass: false,
       showPassConfirmar: false,
       passwordConfirm: "",
