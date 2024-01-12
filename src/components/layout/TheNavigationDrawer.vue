@@ -11,12 +11,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title>
-            <v-img
-              height="30"
-              contain
-              src="@/assets/logo.png"
-              alt="logo"
-            ></v-img>
+            <v-img height="30" contain :src="imgLogo" alt="logo"></v-img>
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
@@ -77,6 +72,7 @@
 import { config } from "../../_config";
 import { mapGetters, mapActions, mapState } from "vuex";
 import { appStorage, rutaAutorizada } from "../../_helpers";
+import ImgLogo from "@/assets/logo.png";
 
 export default {
   components: {},
@@ -108,6 +104,7 @@ export default {
 
   data() {
     return {
+      imgLogo: ImgLogo,
       username: "Usuario",
       userInitials: "AA",
       mini: true,

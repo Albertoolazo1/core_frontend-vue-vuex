@@ -1,7 +1,7 @@
 export const config = {
-    URL: process.env.VUE_APP_URL,
-    API_URL: process.env.VUE_APP_API_URL,
-    SOCKET_URL: process.env.VUE_APP_SOCKET_URL,
+    URL: import.meta.env.VITE_APP_URL,
+    API_URL: import.meta.env.VITE_APP_API_URL,
+    SOCKET_URL: import.meta.env.VITE_APP_SOCKET_URL,
 
     ERROR_COLOR: '#ff2d55',
     SUCCESS_COLOR: '#4cd964',

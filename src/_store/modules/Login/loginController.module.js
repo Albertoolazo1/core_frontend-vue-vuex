@@ -32,7 +32,7 @@ const state = {
     user: _USER ? { status: { loggedIn: true }, user: _USER, statusRequest: false } : { status: { loggedIn: false }, user: null, statusRequest: false },
     token: "",
     loadingLogin: false,
-    passphrase: process.env.VUE_APP_PASSPHRASE,
+    passphrase: import.meta.env.VITE_APP_PASSPHRASE,
     perfilUsuario: _PERFIL ? _PERFIL : {},
 
     stepLogin: 0,

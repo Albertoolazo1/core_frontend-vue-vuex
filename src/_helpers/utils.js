@@ -14,7 +14,7 @@ import { appStorage } from "./appStorage";
  * @property {object} body - Cuerpo de la respuesta.
  * @property {number} code - Código numérico que indica el resultado de la operación (si está disponible).
  */
-function handleResponse(response) {
+function handleResponseConvert(response) {
     const messageMap = {
         1: "Se guardó correctamente.",
         2: "Se actualizó correctamente.",
@@ -783,7 +783,7 @@ function restaurarEnie(cadena) {
 }
 
 export {
-    handleResponse,
+    handleResponseConvert,
     getFechaActual,
     capitalizarCadena,
     decodeBase64,

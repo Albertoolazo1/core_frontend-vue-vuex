@@ -1,4 +1,6 @@
 Vue.config.productionTip = false
+Vue.config.silent = true
+Vue.config.devtools = true
 
 import Vue from 'vue';
 import App from './App.vue';

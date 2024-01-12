@@ -1,5 +1,5 @@
-import SockJS from "sockjs-client";
-import Stomp from "stompjs";
+import Stomp from "webstomp-client";
+import SockJS from "sockjs-client/dist/sockjs"
 import { config } from "../_config";
 import { appStorage, handleSocketMessage } from "../_helpers";
 
