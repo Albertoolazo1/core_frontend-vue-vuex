@@ -29,7 +29,11 @@ const routes = [
     name: 'usuarios',
     component: () => import('../views/Usuarios.vue')
   },
-
+  {
+    path: '/agenda',
+    name: 'agenda',
+    component: () => import('../views/catalogos/Agenda')
+  },
   {
     path: '/sinAutorizacion',
     name: 'noAutorizado',

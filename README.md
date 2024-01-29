@@ -2,8 +2,8 @@
 
 Core Front End v3.0.0
 
-- El proyecto funciona con la versión de NodeJS 16.13.1 esta versión ya va incluida,
-entonces no es necesario instalar en el ordenador esa versión específicamente.
+- El proyecto funciona con la versión de NodeJS 18.0.0, el cual es ejecutable con yarn. De manera que a partir de esta versión de node.js es gestionable con 
+yarn.
 
 ## Funcionalidades
 
@@ -22,10 +22,12 @@ entonces no es necesario instalar en el ordenador esa versión específicamente.
 ## Project setup
 
 ``` text
-npm install
+yarn install
 ```
 
 ## Dependencies
+``` 
+```
 
 ### Dependencias usadas
 
@@ -36,16 +38,6 @@ Las dependencias requeridas ya van incluidas en el proyecto.
 ## Compiles and hot-reloads for development
 
 ``` text
-npm run serve
+yarn dev
 ```
 
-### Compiles and minifies for production
-
-``` text
-npm run build
-```
-
-### Lints and fixes files
-
-``` text
-npm run lint

@@ -41,6 +41,13 @@ export const config = {
             href: { name: "home" },
             path: [0]
         },
+        {
+            id: 0,
+            name: "Agenda",
+            icon: "mdi-calendar-month-outline",
+            href: { name: "agenda" },
+            path: [1]
+        },
     ],
 
     /**
@@ -53,6 +60,12 @@ export const config = {
             name: "Home",
             href: { name: "home" },
             path: [0]
+        },
+        {
+            id: 0,
+            name: "Agenga",
+            href: { name: "agenda" },
+            path: [1]
         },
     ],
 
