@@ -17,12 +17,12 @@ entonces no es necesario instalar en el ordenador esa versión específicamente.
 - Uso de modelos globales
 - Mejor estructura de carpetas
 - Re-conexion automática del web socket
-- 
+- Se agrega Yarn y Vite al proyecto
 
 ## Project setup
 
 ``` text
-npm install
+yarn install
 ```
 
 ## Dependencies
@@ -36,16 +36,11 @@ Las dependencias requeridas ya van incluidas en el proyecto.
 ## Compiles and hot-reloads for development
 
 ``` text
-npm run serve
+yarn dev
 ```
 
 ### Compiles and minifies for production
 
 ``` text
-npm run build
+yarn build
 ```
-
-### Lints and fixes files
-
-``` text
-npm run lint
